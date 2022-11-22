@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poopins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.loginBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    flex-direction: column;
+    background: white;
+}
+.inputBox {
+    position: relative;
+    width: 400px;
+}
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    background: white;
+    border-radius: 5px;
+    outline: none;
+    color: black;
+    font-size: 1em;
+    transition: 0.25s;
+}
+
+.inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: black;
+    text-transform: uppercase;
+    transition: 0.25s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span
+{
+    color: black;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: white;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    letter-spacing: 0.2em;
+}
+.inputBox input:valid,
+.inputBox input:focus{
+    border: 1px solid black;
+}
+.buttonLogin{
+    width: 400px;
+    color: white;
+    background-color: #db2f43;
+}
+.buttonLogin:hover{
+    background: white;
+    color: #cf2338;
+}
+.loginBody .err{
+    height: 30px;
+    color: red;
+    align-self: flex-start;
+    margin-left: 570px;
+}
