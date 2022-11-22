@@ -29,6 +29,14 @@ function User() {
         onClick: () => alert("123123123"),
       },
     },
+    {
+      type: "SearchBar",
+      props: {
+        onSeacrch: () => {
+          alert("xxxx");
+        },
+      },
+    },
   ];
 
   return (
