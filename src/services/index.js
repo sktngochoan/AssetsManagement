@@ -20,7 +20,7 @@ export const updateUser = async (data) => {
 };
 
 export const disableUser = async (username) => {
-  return post(`${ENDPOINTS.USER}/:${username}/disable`);
+  return post(`${ENDPOINTS.USER}/${username}/disable`);
 };
 
 export const login = async (data) => {

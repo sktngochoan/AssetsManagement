@@ -64,7 +64,7 @@ const Main = () => {
           <div className="headerTag">
             <strong>{headerText}</strong>
           </div>
-          <div className="userPosition">This is ghế ngồi của user</div>
+          <div className="userPosition">Username'position</div>
         </Container>
       </Header>
       <Content className="content">
